@@ -1,5 +1,3 @@
-from doctest import ELLIPSIS_MARKER
-import json
 import pandas as pd
 from requests.utils import to_key_val_list
 import xarray as xr
@@ -9,21 +7,12 @@ import time
 from itertools import dropwhile
 import sys 
 import os
-import subprocess
-from eccodes import *
 import requests
 import argparse
 from io import StringIO
-import logging
-from logging.handlers import TimedRotatingFileHandler
-import matplotlib.pyplot as plt
 import numpy as np
 import traceback
-from SPARQLWrapper import SPARQLWrapper, JSON
-import operator
-import re
 from dateutil.relativedelta import relativedelta
-import netCDF4
 from datetime import datetime, timedelta, date
 
 def parse_arguments():
