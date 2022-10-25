@@ -1,4 +1,4 @@
-from doctest import ELLIPSIS_MARKER
+
 import json
 import pandas as pd
 from requests.utils import to_key_val_list
